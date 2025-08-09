@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rick — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af', // blue
+            background: '#000000',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-gray-300">
+  <!-- Navbar -->
+  <header class="bg-background border-b border-primary">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-primary text-2xl font-bold">Rick</h1>
+      <nav class="flex gap-6 text-gray-300">
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#services" class="hover:text-primary">Services</a>
+        <a href="#projects" class="hover:text-primary">Projects</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-4xl font-bold">Hi, I'm <span class="text-primary">Rick</span></h2>
+    <p class="mt-4 text-gray-400 max-w-2xl mx-auto">I create responsive websites, write engaging content, and edit videos — helping brands and individuals stand out online.</p>
+    <div class="mt-6 flex justify-center gap-4">
+      <a href="#projects" class="bg-primary px-4 py-2 rounded text-white">View Projects</a>
+      
+    </div>
+  </section>
+  <img src="logo.png" alt="Rick Logo" class="max-w-xs mx-auto">
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-2xl font-semibold text-primary mb-4">About Me</h3>
+    <p class="text-gray-300">I'm a passionate web developer skilled in HTML, Tailwind CSS, and JavaScript. I also write articles.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-2xl font-semibold text-primary mb-6 ">Services</h3>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="p-4 border border-primary rounded hover:bg-blue-800">
+        <h4 class="font-bold mb-2 ">Web Development</h4>
+        
+        <p class="text-gray-400 ">Clean, responsive websites using HTML, Tailwind CSS, and JavaScript.</p>
+      </div>
+      <div class="p-4 border border-primary rounded hover:bg-blue-800">
+        <h4 class="font-bold mb-2">Writing</h4>
+        <p class="text-gray-400">Blog posts, product descriptions, and marketing copy.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-2xl font-semibold text-primary mb-6">Projects</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-4 border border-primary rounded hover:bg-primary hover:text-white transition">
+        <h4 class="font-bold">Portfolio Website</h4>
+        <p class="text-sm mt-2">A responsive personal portfolio built with Tailwind CSS.</p>
+      </div>
+      <div class="p-4 border border-primary rounded hover:bg-primary hover:text-white transition">
+        <h4 class="font-bold">E-commerce Website</h4>
+        <p class="text-sm mt-2">A freelancing company owned by me-Prolance</p>
+        </div>
+  </section>
+
+  <!-- Contact -->
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-16 text-center">
+    <h3 class="text-2xl font-semibold text-primary mb-4">Contact</h3>
+    <p class="text-gray-300 mb-6">Reach out to me on Discord:</p>
+    <a href="https://discord.gg/amdmHCB7" target="_blank" class="inline-block bg-primary px-6 py-3 rounded text-white hover:bg-blue-800 transition">Join My Discord</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-background border-t border-primary py-6 text-center text-gray-500">
+    © <span id="year"></span> Rick — Built with HTML, Tailwind CSS, JS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
